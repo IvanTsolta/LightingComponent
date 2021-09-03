@@ -1,0 +1,14 @@
+/**
+ * Created by Yaryna on 28.08.2021.
+ */
+
+lightning-card {
+    display: block;
+    background-color: #50b3d2;
+    padding: 4px;
+    min-height: 1ch;
+}
+lightning-button{
+    border-radius: 15px;
+    border:  solid 1px black;
+}

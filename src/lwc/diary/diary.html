@@ -1,0 +1,17 @@
+<!--
+ - Created by Yaryna on 20.08.2021.
+ -->
+
+<!-- Diary -->
+<template>
+    <lightning-card>
+        <lightning-input type="checkbox" label="Secret" name="note-is-secret" data-id="secret-input"></lightning-input>
+        <lightning-button label="Enter" onclick={handleClick}></lightning-button>
+<!--        <a class="slds-button slds-button_success" label="Enter" onclick={handleClick}></a>-->
+        <lightning-input label="My Note:" name="note" data-id="note-input"></lightning-input>
+        <template onload={handleLoad} for:each={arr} for:item="item">
+            <c-note key={item} note={item}>
+            </c-note>
+        </template>
+    </lightning-card>
+</template>
